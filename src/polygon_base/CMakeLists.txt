@@ -9,9 +9,6 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(pluginlib REQUIRED)
 
-# export your plugins
-pluginlib_export_plugin_description_file(polygon_base plugins.xml)
-
 add_executable(area_node src/area_node.cpp)
 target_include_directories(area_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
