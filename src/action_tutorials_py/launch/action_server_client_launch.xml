@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="action_tutorials_py" exec="fibonacci_action_server" name="server"/>
+  <node pkg="action_tutorials_py" exec="fibonacci_action_client" name="client"/>
+</launch>
