@@ -1,0 +1,10 @@
+<launch>
+  <arg name="topic" default="chatter_xml"/>
+
+  <node pkg="py_pubsub" exec="talker" name="talker">
+    <param name="topic" value="$(var topic)"/>
+  </node>
+  <node pkg="py_pubsub" exec="listener" name="listener">
+    <param name="topic" value="$(var topic)"/>
+  </node>
+</launch>

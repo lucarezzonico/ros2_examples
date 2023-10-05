@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="cpp_pubsub" exec="talker" name="talker"/>
+  <node pkg="cpp_pubsub" exec="listener" name="listener"/>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="more_interfaces" exec="pub_address_book" name="pub_address_book"/>
+  <node pkg="more_interfaces" exec="sub_address_book" name="sub_address_book"/>
+</launch>

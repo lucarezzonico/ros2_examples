@@ -1,0 +1,10 @@
+<launch>
+  <arg name="a_launch" default="2"/>
+  <arg name="b_launch" default="3"/>
+
+  <node pkg="py_srvcli" exec="client" name="client">
+    <param name="a_launch" value="$(var a_launch)"/>
+    <param name="b_launch" value="$(var b_launch)"/>
+  </node>
+
+</launch>
