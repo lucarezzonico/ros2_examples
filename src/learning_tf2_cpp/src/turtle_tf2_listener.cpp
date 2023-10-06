@@ -74,6 +74,27 @@ private:
           t = tf_buffer_->lookupTransform(
             toFrameRel, fromFrameRel,
             tf2::TimePointZero);
+
+          // acquire a transform at a specific timestamp and
+          // wait for a transform to be available
+          // rclcpp::Time now = this->get_clock()->now();
+          // t = tf_buffer_->lookupTransform(
+          //   toFrameRel,
+          //   fromFrameRel,
+          //   now, 50ms);
+
+          // go back in time and make frame transformations
+          // between old and current poses
+          rclcpp::Time now = this->get_clock()->now();
+          rclcpp::Time when = now - rclcpp::Duration(5, 0);
+          t = tf_buffer_->lookupTransform(
+              toFrameRel,
+              now,
+              fromFrameRel,
+              when,
+              "world",
+              50ms);
+
         } catch (const tf2::TransformException & ex) {
           RCLCPP_INFO(
             this->get_logger(), "Could not transform %s to %s: %s",
