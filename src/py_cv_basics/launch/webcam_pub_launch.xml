@@ -1,0 +1,7 @@
+<launch>
+  <arg name="topic" default="webcam_topic"/>
+
+  <node pkg="py_cv_basics" exec="img_publisher" name="img_publisher">
+    <param name="topic" value="$(var topic)"/>
+  </node>
+</launch>

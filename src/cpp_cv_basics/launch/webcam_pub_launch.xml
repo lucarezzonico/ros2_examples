@@ -1,0 +1,7 @@
+<launch>
+  <arg name="topic" default="webcam_topic"/>
+
+  <node pkg="cpp_cv_basics" exec="webcam_pub" name="webcam_pub">
+    <param name="topic" value="$(var topic)"/>
+  </node>
+</launch>

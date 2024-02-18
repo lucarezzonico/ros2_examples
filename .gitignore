@@ -3,4 +3,10 @@ build
 install
 log
 
+src/cpp_cv_basics/launch/__pycache__
+src/py_pubsub/py_pubsub/__pycache__
+src/py_pubsub/launch/__pycache__
+src/py_cv_basics/launch/__pycache__
+
+
 src/rosject.ipynb
