@@ -1,9 +1,9 @@
 ## Home
-[back to top-level of the Workspace](../../)
+[Workspace Root](../../)
 
 ## Build and Launch
 ### Python Webcam Package:
-Open Bash Terminal in the top-level of the Workspace (ros2_ws)
+Open Bash Terminal at the root of the Workspace (ros2_ws)
 ```bash
 colcon build --packages-select py_cv_basics
 source install/local_setup.bash
@@ -17,4 +17,18 @@ ros2 topic list
 ```
 
 ## Folder Structure
-
+### Python
+```md
+py_cv_basics
+├── launch
+│   ├── webcam_launch.py
+│   ├── webcam_launch.xml
+│   ├── webcam_pub_launch.xml
+│   └── webcam_sub_launch.xml
+├── package.xml
+├── py_cv_basics
+│   ├── webcam_pub.py
+│   └── webcam_sub.py
+├── setup.cfg
+└── setup.py
+```
