@@ -1,6 +1,6 @@
 # Collection of ROS2 examples
 
-#### build and launch
+## Build and Launch
 Example on the python webcam package:
 
 Open Bash Terminal in the top-level of the Workspace (ros2_ws)
