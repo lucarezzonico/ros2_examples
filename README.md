@@ -1,6 +1,6 @@
 # Collection of ROS2 examples
 
-## Packages:
+## Packages
 [C++ Webcam](src/cpp_cv_basics/README.md)
 
 
