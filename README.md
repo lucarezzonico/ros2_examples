@@ -30,7 +30,7 @@ ros2 launch webcam_launch.py
 ros2 topic list
 ```
 
-## Folder Structure
+## Workspace Folder Structure
 ```md
 workspace_folder/
 └── src/
@@ -53,7 +53,7 @@ workspace_folder/
         └── src/
 ```
 
-#### Example Python Package
+#### Example Python Package Structure
 ```md
 py_cv_basics
 ├── launch
@@ -68,7 +68,7 @@ py_cv_basics
 ├── setup.cfg
 └── setup.py
 ```
-#### Example C++ Package
+#### Example C++ Package Structure
 ```md
 cpp_cv_basics
 ├── CMakeLists.txt
