@@ -7,7 +7,6 @@
 
 
 ## Build and Launch
-### Python Webcam Package:
 Open Bash Terminal at the root of the Workspace (ros2_ws)
 ```bash
 colcon build --packages-select ROS_PACKAGE
