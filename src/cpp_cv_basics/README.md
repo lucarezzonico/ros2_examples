@@ -1,9 +1,9 @@
 ## Home
-[back to top-level of the Workspace](../../)
+[Workspace Root](../../)
 
 ## Build and Launch
 ### C++ Webcam Package:
-Open Bash Terminal in the top-level of the Workspace (ros2_ws)
+Open Bash Terminal at the root of the Workspace (ros2_ws)
 ```bash
 colcon build --packages-select cpp_cv_basics
 source install/local_setup.bash
