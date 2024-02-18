@@ -2,6 +2,7 @@
 
 ## Packages
 [C++ Webcam](src/cpp_cv_basics)
+[Python Webcam](src/py_cv_basics)
 
 
 ## Build and Launch
