@@ -1,5 +1,4 @@
 # Collection of ROS2 examples
-
 ## Packages
 
 [C++ Webcam](src/cpp_cv_basics)
@@ -9,20 +8,12 @@
 
 ## Build and Launch
 ### Python Webcam Package:
-Open Bash Terminal in the top-level of the Workspace (ros2_ws)
+Open Bash Terminal at the root of the Workspace (ros2_ws)
 ```bash
-colcon build --packages-select py_cv_basics
+colcon build --packages-select ROS_PACKAGE
 source install/local_setup.bash
-cd src/py_cv_basics/launch/
-ros2 launch webcam_launch.py
-```
-### C++ Webcam Package:
-Open Bash Terminal in the top-level of the Workspace (ros2_ws)
-```bash
-colcon build --packages-select cpp_cv_basics
-source install/local_setup.bash
-cd src/cpp_cv_basics/launch/
-ros2 launch webcam_launch.py
+cd src/ROS_PACKAGE/launch/
+ros2 launch ROS_LAUNCH_FILE.py
 ```
 
 ## Commands
