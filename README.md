@@ -1,8 +1,9 @@
-# ros2_examples
+# Collection of ROS2 examples
 
-Example to build and launch the python webcam package:
+#### build and launch
+Example on the python webcam package:
 
-Open terminal in the top-level of the workspace (ros2_ws)
+Open Bash Terminal in the top-level of the Workspace (ros2_ws)
 ```bash
 colcon build --packages-select py_cv_basics
 source install/local_setup.bash
