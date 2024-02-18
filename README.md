@@ -31,7 +31,29 @@ ros2 topic list
 ```
 
 ## Folder Structure
-### Python
+```md
+workspace_folder/
+└── src/
+    ├── py_package_1/
+    │   ├── package.xml
+    │   ├── resource/py_package_1
+    │   ├── setup.cfg
+    │   ├── setup.py
+    │   └── py_package_1/
+    ├── cpp_package_1/
+    │   ├── CMakeLists.txt
+    │   ├── include/cpp_package_1/
+    │   ├── package.xml
+    │   └── src/
+    ...
+    └── cpp_package_n/
+        ├── CMakeLists.txt
+        ├── include/cpp_package_n/
+        ├── package.xml
+        └── src/
+```
+
+#### Example Python Package
 ```md
 py_cv_basics
 ├── launch
@@ -46,7 +68,7 @@ py_cv_basics
 ├── setup.cfg
 └── setup.py
 ```
-### C++
+#### Example C++ Package
 ```md
 cpp_cv_basics
 ├── CMakeLists.txt
